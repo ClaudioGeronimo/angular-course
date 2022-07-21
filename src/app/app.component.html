@@ -5,38 +5,72 @@
 
 </div>
 
-<!-- <div *ngFor="let pair of course | keyvalue">
-{{ pair.key + ': ' + pair.value }} 
+      <div class="courses">
+            <!--       <another-card  *ngFor ="let course of courses;index as i; first as isFirst;"
+                        [class.is-first] = "isFirst"
+                        (click)="onCourseViewed()" 
+                        [course]="course"
+                        [cardIndex]="i + 1"
+                        ></another-card> -->
+                  
+                  <!-- <course-card *ngFor="let course of courses;index as i; first as isFirst; even as isEven; odd as isOdd" 
+                        [class.is-first] = "isFirst"
+                        [class.is-last] = "isLast"
+                        [class.is-even] = "isEven"
+                        [class.is-odd] = "isOdd"
+            
+                        (courseSelected)="onCourseSelected($event)"  
+                        [course]= "course" [cardIndex]= "i + 1" ></course-card> -->
 
-</div>
--->
-
-
-
-
-<div class="courses">
-   <!--<course-card #cardRef1
-         (courseSelected)="onCourseSelected($event)"  
-         [course]= "courses[1]">
-   </course-card>  -->
-   <course-card  #container
-         (courseSelected)="onCourseSelected($event)"  
-         [course]= "courses[2]">
-   </course-card> 
-
-</div>
- <!--   <course-card *ngFor="let course of courses;index as i; first as isFirst; even as isEven; odd as isOdd" 
-                     [class.is-first] = "isFirst"
-                     [class.is-last] = "isLast"
-                     [class.is-even] = "isEven"
-                     [class.is-odd] = "isOdd"
-
+                       <course-card #cardRef1
+                              (courseSelected)="onCourseSelected($event)"  
+                              [course]= "courses[1]">
+                       </course-card>  
+            
+        </div>
+            
+            <!-- <div *ngFor="let pair of course | keyvalue">
+            {{ pair.key + ': ' + pair.value }} 
+            
+            </div>
+            -->
+            
+            
+            
+            
+            
+               <!--<course-card #cardRef1
                      (courseSelected)="onCourseSelected($event)"  
-                     [course]= "course" [cardIndex]= "i + 1" ></course-card> 
- -->
-  <!--  <course-card (courseSelected)="onCourseSelected($event)" [course]= "rxJs"></course-card> 
-   <course-card (courseSelected)="onCourseSelected($event)" [course]= "nxJs"></course-card>  -->
-   
+                     [course]= "courses[1]">
+               </course-card>  -->
+            
+               <!-- <course-card  #container
+                     (courseSelected)="onCourseSelected($event)"  
+                     [course]= "courses[2]">
+               </course-card> 
+                -->
+              
+            <!--    <another-card (courseSelected1)="onCourseSelectedEmit($event)" [course]="course2"></another-card>
+               <another-card (courseSelected2)="onCourseSelectedEmit($event)" [course]="course3"></another-card> -->
+               
+               <!-- <course-card *ngFor="let course of courses;index as i; first as isFirst; even as isEven; odd as isOdd" 
+                        [class.is-first] = "isFirst"
+                        [class.is-last] = "isLast"
+                        [class.is-even] = "isEven"
+                        [class.is-odd] = "isOdd"
+            
+                        (courseSelected)="onCourseSelected($event)"  
+                        [course]= "course" [cardIndex]= "i + 1" ></course-card> -->
+            
+            
+                
+            
+              <!--  <course-card (courseSelected)="onCourseSelected($event)" [course]= "rxJs"></course-card> 
+               <course-card (courseSelected)="onCourseSelected($event)" [course]= "nxJs"></course-card>  -->
+               
+            
+    
+  
 
 
 

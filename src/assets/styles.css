@@ -38,13 +38,14 @@ button {
 }
 
 course-card.is-first {
-  border-top: 2px solid grey;
+  border-top: 2px solid rgb(12, 12, 11);
   padding-top: 20px;
 }
 
 course-card.is-last {
   border-bottom: 2px solid grey;
   padding-top: 20px;
+  background: #011b17;
 }
 
 course-card.is-even {
@@ -83,7 +84,6 @@ course-card.is-odd {
 .highlighted {
   box-shadow: 0 2px 16px 0 #de1e19, 0 3px 8px 0 rgba(226, 21, 19, 0.47), 0 6px 8px -1px #b41c18;
 }
-
 
 
 

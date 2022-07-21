@@ -12,7 +12,7 @@ export class CourseCardComponent implements OnInit {
   //parameters
   //---------------------
   @Input()
-  course:Course
+  course:Course;
 
   @Input()
   cardIndex: number;
